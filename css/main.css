@@ -61,7 +61,7 @@ header a {
   width: 15%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 55px;
 }
 .main-menu {
   width: 60%;
@@ -87,9 +87,10 @@ a.button-menu:hover {
 }
 .button-menu {
   height: 40px;
-  width: 100px;
+  width: 5%;
   background-color: black;
   color: white;
   border-radius: 10px;
   font-size: 12px;
+  margin-right: 60px;
 }
