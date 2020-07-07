@@ -198,6 +198,12 @@ input.form-field {
   font-weight: 600;
   cursor: not-allowed;
 }
+.active {
+  color: black;
+}
+.notactive {
+  color: #acadae;
+}
 /* Responsive items */
 .hamburger-menu {
   display: none;
