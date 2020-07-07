@@ -14,16 +14,24 @@ header a {
   text-decoration: none;
   color: inherit;
 }
+header {
+  padding: 0 70px;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
 
 /* Header */
 .topper-menu {
   height: 50px;
   background-color: #f3f4f5;
   display: flex;
-  padding: 15px 5%;
   font-size: 14px;
   font-weight: 600;
   color: #acadae;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 .topper-menu a:hover {
   text-decoration: none;
@@ -33,11 +41,14 @@ header a {
   width: 50%;
 }
 .topper-menu ul li {
-  padding: 0 20px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 .topper-menu ul {
   list-style: none;
   display: flex;
+  height: 100%;
+  align-items: center;
 }
 .topper-right ul {
   float: right;
@@ -61,10 +72,9 @@ header a {
   width: 15%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 55px;
 }
 .main-menu {
-  width: 60%;
+  width: 80%;
 }
 .main-menu nav ul {
   display: flex;
@@ -87,10 +97,66 @@ a.button-menu:hover {
 }
 .button-menu {
   height: 40px;
-  width: 5%;
+  width: 100px;
   background-color: black;
   color: white;
   border-radius: 10px;
   font-size: 12px;
-  margin-right: 60px;
+}
+.jumbotron {
+  display: flex;
+  width: 100%;
+  padding: 0 8px;
+  min-height: 500px;
+}
+.jumbo-left {
+  width: 50%;
+  padding: 100px 150px 100px 0;
+}
+.jumbo-right {
+  width: 50%;
+}
+.jumbo-par {
+  margin: 20px 0;
+  color: #acadae;
+  font-size: 14px;
+  font-weight: 600;
+}
+.form-field {
+  border: none;
+  border-bottom: solid 1px #cccccc;
+  margin: 10px 0;
+  padding-bottom: 5px;
+}
+select.form-field {
+  width: 80px;
+}
+input.form-field {
+  margin: 0 10px;
+  color: #acadae;
+  font-size: 14px;
+  font-weight: 400;
+}
+.open-account {
+  margin: 20px 0;
+}
+.open-account span {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.addictive {
+  color: grey;
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  background-color: #2f3133;
+  color: grey;
+  border-radius: 10px;
+  line-height: 39px;
+  padding-left: 32px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.addictive {
+  cursor: not-allowed;
 }
