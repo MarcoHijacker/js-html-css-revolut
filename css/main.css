@@ -60,7 +60,7 @@ h1 {
 .topper-left a:hover, .topper-right a:hover {
   color: black;
 }
-/* Menu guida principale */
+/* Menu generale con navbar */
 .nav-menu {
   display: flex;
   align-items: center;
