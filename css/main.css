@@ -17,10 +17,6 @@ header a {
 header {
   padding: 0 70px;
 }
-h1 {
-  font-size: 60px;
-  font-weight: 600;
-}
 
 /* Header */
 /* Menu in cima */
@@ -134,6 +130,10 @@ a.button-menu:hover {
   font-size: 10px;
   font-weight: 800;
 }
+.img-phone {
+   width: 120px;
+   height: auto;
+}
 /* Jumbotron */
 .jumbotron {
   display: flex;
@@ -143,7 +143,7 @@ a.button-menu:hover {
 }
 .jumbo-left {
   width: 50%;
-  padding: 100px 150px 100px 0;
+  padding: 100px 100px 100px 0;
 }
 .jumbo-right {
   width: 50%;
@@ -152,6 +152,14 @@ a.button-menu:hover {
   margin: 20px 0;
   color: #acadae;
   font-size: 14px;
+  font-weight: 600;
+}
+.img-phone {
+   width: 500px;
+   height: auto;
+}
+.big-title {
+  font-size: 60px;
   font-weight: 600;
 }
 .form-field {
@@ -188,7 +196,83 @@ input.form-field {
   padding-left: 32px;
   font-size: 14px;
   font-weight: 600;
-}
-.addictive {
   cursor: not-allowed;
+}
+/* Responsive items */
+.hamburger-menu {
+  display: none;
+}
+.hamburger-menu i {
+  font-size: 20px;
+  color: #2f3133;
+}
+.responsive-spot, .responsive-btn {
+  display: none;
+}
+
+@media all and (max-width: 930px) {
+  .topper-menu {
+    display: none;
+  }
+  .main-menu {
+    display: none;
+  }
+  #logo {
+    width: 87%;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  #side-button {
+    display: none;
+  }
+  #jtron {
+    display: block;
+  }
+  #jumbo-lf {
+    width: 100%;
+    text-align: center;
+    padding: 25px 150px;
+  }
+  #jumbo-rt {
+    width: 100%;
+    text-align: center;
+  }
+  .form-field, .addictive, .open-account {
+    display: none;
+  }
+  .big-title {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .img-phone {
+     width: 400px;
+     height: auto;
+  }
+  #btn-responsive {
+    display: block;
+  }
+  .responsive-spot {
+    display: block;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 30px 0;
+    border-bottom: solid 1px #cccccc;
+    text-align: center;
+  }
+  .responsive-btn {
+    display: block;
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 45%;
+    margin: 33px 0;
+  }
 }
