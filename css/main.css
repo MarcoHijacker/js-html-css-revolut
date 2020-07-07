@@ -23,6 +23,7 @@ h1 {
 }
 
 /* Header */
+/* Menu in cima */
 .topper-menu {
   height: 50px;
   background-color: #f3f4f5;
@@ -59,6 +60,7 @@ h1 {
 .topper-left a:hover, .topper-right a:hover {
   color: black;
 }
+/* Menu guida principale */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -76,12 +78,10 @@ h1 {
 .main-menu {
   width: 80%;
 }
-.main-menu nav ul {
-  display: flex;
+.menu-item {
+  display: inline-block;
   list-style: none;
-}
-.main-menu nav ul li {
-  padding: 0 20px;
+  padding: 15px;
 }
 .main-menu nav ul li a:hover {
   color: black;
@@ -103,6 +103,38 @@ a.button-menu:hover {
   border-radius: 10px;
   font-size: 12px;
 }
+.main-menu nav ul li {
+  position: relative;
+}
+.dropdown-list li {
+  padding: 15px;
+}
+.dropdown-menu {
+  background-color: white;
+  position: absolute;
+  top: 45px;
+  left: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  filter: drop-shadow(0 0 0.5rem #cccccc);
+  border-radius: 7px;
+  width: 250px;
+  display: none;
+}
+.dropdown-list li {
+  display: block;
+}
+.junior {
+  position: relative;
+}
+.new-icon {
+  color: blue;
+  position: absolute;
+  top: 3px;
+  font-size: 10px;
+  font-weight: 800;
+}
+/* Jumbotron */
 .jumbotron {
   display: flex;
   width: 100%;
