@@ -25,30 +25,27 @@ $(document).ready(function () {
   });
 
   $('.mobile-item span').click(function () { // Al click su una voce di menu mobile
-    // Inizializzo la situazione di partenza per far sì che dopo un click su una voce le altre si chiudano e deselezionino
-    $('.mobile-item span').removeClass('active'); // Tolgo la classe che rende il colore nero sulla voce precedentemente attiva (in realtà la tolgo a tutte)
-    $('.mobile-item > ul').hide(); // Nascondo tutti i menu a tendina
-    $('.mobile-item span > i').removeClass('fa-chevron-up active').addClass('fa-chevron-down'); // Ripristino l'immagine con la freccia indicatrice delle varie voci dei menu
 
-    if($(this).hasClass('active')) {
+    if($(this).hasClass('active')) { // Se la voce era precedentemente aperta
       $('.mobile-item span').removeClass('active'); // Tolgo la classe che rende il colore nero sulla voce precedentemente attiva (in realtà la tolgo a tutte)
       $('.mobile-item > ul').hide(); // Nascondo tutti i menu a tendina
-      $('.mobile-item span > i').removeClass('fa-chevron-up active').addClass('fa-chevron-down'); // Ripristino l'immagine con la freccia indicatrice delle varie voci dei menu
-      $(this).removeClass('active'); // Aggiungo colore nero in classe active allo span cliccato
-      $(this).next().slideUp(); // Faccio andare in display block l'ul successivo allo span cliccato
-    } else {
-      $(this).toggleClass('active'); // Aggiungo colore nero in classe active allo span cliccato
-      $(this).next().slideDown(); // Faccio andare in display block l'ul successivo allo span cliccato
-    }
+      $('.mobile-item span > i').removeClass('fa-chevron-up active').addClass('fa-chevron-down'); // Ripristino l'immagine con la freccia indicatrice in giù delle varie voci dei menu
+    } else { // Se la voce non era aperta (nuovo menu down)
+      // Come sopra, inizializzo la situazione di partenza
+       $('.mobile-item span').removeClass('active');
+       $('.mobile-item > ul').hide();
+       $('.mobile-item span > i').removeClass('fa-chevron-up active').addClass('fa-chevron-down');
 
-    // $(this).toggleClass('active'); // Aggiungo colore nero in classe active allo span cliccato
-    // $(this).next().slideToggle(); // Faccio andare in display block l'ul successivo allo span cliccato
-    if($(this).children().hasClass('fa-chevron-down')) { // Qui sistemo la logica della freccia che indica se il menu è aperto o chiuso
-      $(this).children().removeClass('fa-chevron-down'); // Se sul click la freccia è giù tolgo questa
-      $(this).children().addClass('fa-chevron-up active'); // E la rimpiazzo con una freccia in su, colore nero
-    } else {
-      $(this).children().removeClass('fa-chevron-up active'); // Altrimenti faccio l'inverso di sopra, tolgo freccia su attiva
-      $(this).children().addClass('fa-chevron-down'); // E rimetto la freccia giù inattiva
+      $(this).toggleClass('active'); // Aggiungo colore nero in classe active allo span cliccato
+      $(this).next().slideToggle(); // Faccio andare in display block l'ul successivo allo span cliccato
+
+      if($(this).children().hasClass('fa-chevron-down')) { // Qui sistemo la logica della freccia che indica se il menu è aperto o chiuso
+        $(this).children().removeClass('fa-chevron-down'); // Se sul click la freccia è giù tolgo questa
+        $(this).children().addClass('fa-chevron-up active'); // E la rimpiazzo con una freccia in su, colore nero
+      } else {
+        $(this).children().removeClass('fa-chevron-up active'); // Altrimenti faccio l'inverso di sopra, tolgo freccia su attiva
+        $(this).children().addClass('fa-chevron-down'); // E rimetto la freccia giù inattiva
+      }
     }
   });
 
