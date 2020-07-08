@@ -17,6 +17,13 @@ header a {
 header {
   padding: 0 70px;
 }
+section a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  padding: 0 70px;
+}
 
 /* Header */
 /* Menu in cima */
@@ -215,7 +222,81 @@ input.form-field {
 .responsive-spot, .responsive-btn {
   display: none;
 }
-
+#mobile-menu {
+  display: none;
+}
+.mobile-right a i {
+  font-size: 20px;
+  color: #2f3133;
+}
+.topper-mobile {
+  height: 80px;
+  background-color: #f3f4f5;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  color: #acadae;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  align-items: center;
+}
+.topper-mobile ul {
+  list-style: none;
+}
+.topper-mobile ul li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.topper-mobile ul li:hover {
+  color: black;
+}
+.topper-mobile ul li:first-child {
+  color: black;
+}
+.mobile-left {
+  width: 50%;
+}
+.mobile-right {
+  width: 50%;
+  text-align: right;
+  margin-right: 20px;
+}
+.mobile-item span {
+  cursor: pointer;
+}
+.mobile-item {
+  font-size: 16px;
+  color: #acadae;
+  font-weight: 600;
+  margin: 40px 25px;
+  position: relative;
+}
+.mobile-dropdown {
+  list-style: none;
+  display: none;
+}
+.mobile-dropdown li {
+  margin: 25px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.separator-item {
+  border-bottom: solid 1px #cccccc;
+  padding-bottom: 20px;
+}
+.mobile-item span > i {
+  position: absolute;
+  right: 10px;
+}
+.mobile-item:last-of-type {
+  margin-bottom: 50px;
+}
+footer {
+  border-top: solid 1px #cccccc;
+  margin: auto 0;
+}
+/* MediaQuery per dispositivi XS < 930px */
 @media all and (max-width: 930px) {
   .topper-menu {
     display: none;
