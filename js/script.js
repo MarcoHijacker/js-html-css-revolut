@@ -26,9 +26,9 @@ $(document).ready(function () {
 
   $('.mobile-item span').click(function () { // Al click su una voce di menu mobile
     // Inizializzo la situazione di partenza per far sì che dopo un click su una voce le altre si chiudano e deselezionino
-    $('.mobile-item span').removeClass('active'); // Tolgo la classe che rende il colore nero sulla voce precedentemente attiva (in realtà la tolgo a tutte)
-    $('.mobile-item > ul').hide(); // Nascondo tutti i menu a tendina
-    $('.mobile-item span > i').removeClass('fa-chevron-up active').addClass('fa-chevron-down'); // Ripristino l'immagine con la freccia indicatrice delle varie voci dei menu
+    // $('.mobile-item span').removeClass('active'); // Tolgo la classe che rende il colore nero sulla voce precedentemente attiva (in realtà la tolgo a tutte)
+    // $('.mobile-item > ul').hide(); // Nascondo tutti i menu a tendina
+    // $('.mobile-item span > i').removeClass('fa-chevron-up active').addClass('fa-chevron-down'); // Ripristino l'immagine con la freccia indicatrice delle varie voci dei menu
 
     $(this).toggleClass('active'); // Aggiungo colore nero in classe active allo span cliccato
     $(this).next().slideToggle(); // Faccio andare in display block l'ul successivo allo span cliccato
@@ -40,5 +40,5 @@ $(document).ready(function () {
       $(this).children().addClass('fa-chevron-down'); // E rimetto la freccia giù inattiva
     }
   });
-  
+
 });
